@@ -1,0 +1,14 @@
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\bin\Debug\jueguito.exe.config
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\bin\Debug\jueguito.exe
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\bin\Debug\jueguito.pdb
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\obj\Debug\jueguito.csproj.AssemblyReference.cache
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\obj\Debug\jueguito.csproj.CoreCompileInputs.cache
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\obj\Debug\jueguito.exe
+C:\Users\MURIEL\Desktop\gitHub\POO\jueguito\jueguito\obj\Debug\jueguito.pdb
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\bin\Debug\jueguito.exe.config
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\bin\Debug\jueguito.exe
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\bin\Debug\jueguito.pdb
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\obj\Debug\jueguito.csproj.AssemblyReference.cache
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\obj\Debug\jueguito.csproj.CoreCompileInputs.cache
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\obj\Debug\jueguito.exe
+C:\Users\A-04\Desktop\Muriel\POO\jueguito\jueguito\obj\Debug\jueguito.pdb
