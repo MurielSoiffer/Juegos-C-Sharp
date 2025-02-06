@@ -1,0 +1,7 @@
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\bin\Debug\BuscaMinas.exe.config
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\bin\Debug\BuscaMinas.exe
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\bin\Debug\BuscaMinas.pdb
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\obj\Debug\BuscaMinas.csproj.AssemblyReference.cache
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\obj\Debug\BuscaMinas.csproj.CoreCompileInputs.cache
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\obj\Debug\BuscaMinas.exe
+C:\Users\MURIEL\Desktop\gitHub\POO\BuscaMinas\BuscaMinas\obj\Debug\BuscaMinas.pdb
