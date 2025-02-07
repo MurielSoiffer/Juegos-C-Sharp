@@ -12,14 +12,12 @@ namespace Snake
         private int h = Console.WindowHeight;
         private int x;
         private int y;
-        private bool empezarMoverse;
         private char dir;
         private int delay = 0;
         public Snake()
         {
             x = w / 2 - 4;
             y = h / 2;
-            empezarMoverse = false;
             dir = 'n';
         }
         public void dibujar()
@@ -31,12 +29,7 @@ namespace Snake
         public void moverse()
         {
             delay++;
-            if (!empezarMoverse && Console.KeyAvailable) 
-            {
-                var tecla = Console.ReadKey(true).Key;
-                if (tecla == ConsoleKey.D || tecla == ConsoleKey.A || tecla == ConsoleKey.W || tecla == ConsoleKey.S) empezarMoverse = true;
-            }
-            else if (Console.KeyAvailable)
+            if (Console.KeyAvailable)
             {
                 var tecla = Console.ReadKey(true).Key;
                 if (tecla == ConsoleKey.D) dir = 'r';
