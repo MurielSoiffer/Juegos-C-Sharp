@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|c:\\users\\muriel\\desktop\\github\\muriel\\juegos-c-sharp\\snake\\snake\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|solutionrelative:snake\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|c:\\users\\muriel\\desktop\\github\\muriel\\juegos-c-sharp\\snake\\snake\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|solutionrelative:snake\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,7 +11,11 @@
       "RelativeMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|solutionrelative:snake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|c:\\users\\muriel\\desktop\\github\\muriel\\juegos-c-sharp\\snake\\snake\\manzana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\snake\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|solutionrelative:snake\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\snake\\manzana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F015BEB1-ADED-451B-A20B-849AB67808FE}|Snake\\Snake.csproj|solutionrelative:snake\\manzana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Tablero.cs",
               "DocumentMoniker": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\Snake\\Tablero.cs",
               "RelativeDocumentMoniker": "Snake\\Tablero.cs",
               "ToolTip": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\Snake\\Tablero.cs",
               "RelativeToolTip": "Snake\\Tablero.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA1wCMAAAAgAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T00:12:38.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T00:12:38.636Z"
             },
             {
               "$type": "Document",
@@ -57,27 +56,26 @@
               "RelativeDocumentMoniker": "Snake\\Manzana.cs",
               "ToolTip": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\Snake\\Manzana.cs",
               "RelativeToolTip": "Snake\\Manzana.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAA3AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T23:48:41.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T23:48:41.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Snake.cs",
               "DocumentMoniker": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\Snake\\Snake.cs",
               "RelativeDocumentMoniker": "Snake\\Snake.cs",
               "ToolTip": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\Snake\\Snake.cs",
               "RelativeToolTip": "Snake\\Snake.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAzwBoAAAAjAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwDUAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T03:12:50.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MURIEL\\Desktop\\gitHub\\Muriel\\Juegos-C-Sharp\\Snake\\Snake\\Program.cs",
               "RelativeDocumentMoniker": "Snake\\Program.cs",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "Snake\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T03:10:39.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T03:10:39.225Z"
             }
           ]
         }
