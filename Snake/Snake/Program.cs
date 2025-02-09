@@ -16,8 +16,9 @@ namespace Snake
             Console.SetWindowSize(120, 30);
 
             Tablero t = new Tablero(new Point(4,2), new Point(115, 27));
-            Snake s = new Snake();
-            Manzana m = new Manzana();
+            Manzana m = new Manzana(t);
+            Snake s = new Snake(t, m);
+            m.posicionar(s);
             t.dibujar();
             while (true)
             {

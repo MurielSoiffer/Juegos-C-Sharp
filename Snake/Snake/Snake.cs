@@ -9,24 +9,33 @@ namespace Snake
 {
     internal class Snake
     {
-        private int w = Console.WindowWidth;
-        private int h = Console.WindowHeight;
         private Point cabeza;
         private Point cabezaAnt = new Point();
         private char dir;
         private int delay = 0;
         private List<Point> cuerpo = new List<Point>();
-        public Snake()
+        private Point esquinaArriba;
+        private Point esquinaAbajo;
+        private Manzana m;
+        private bool comer;
+
+        public List<Point> Cuerpo { get { return cuerpo; } }
+        public Point Cabeza { get { return cabeza; } }
+        public Snake(Tablero tablero, Manzana manzana)
         {
-            cabeza = new Point(w / 2 - 4, h / 2);
+            comer = false;
             cabezaAnt = cabeza;
             dir = 'n';
+            esquinaArriba = tablero.EsqArriba;
+            esquinaAbajo = tablero.EsqAbajo;
+            cabeza = new Point(esquinaAbajo.X / 2, esquinaAbajo.Y / 2 + esquinaArriba.Y / 2);
+            m = manzana;
             iniciarCuerpo();
         }
 
         private void iniciarCuerpo()
         {
-            int partes = 5;
+            int partes = 3;
             int x = cabeza.X - 1;
             for (int i = 0; i < partes; i++) 
             {
@@ -43,7 +52,6 @@ namespace Snake
             Console.SetCursorPosition(cabeza.X, cabeza.Y);
             Console.WriteLine("0");
         }
-
         public void moverse()
         {
             delay++;
@@ -56,7 +64,10 @@ namespace Snake
                 if (tecla == ConsoleKey.S && dir != 'u') dir = 'd';
             }
             direccion();
-            
+            colisionPared();
+            colisionManzana();
+
+
         }
         private void moverCuerpo(Point posCabeza)
         {
@@ -65,13 +76,17 @@ namespace Snake
             Console.WriteLine("o");
             cuerpo.Insert(0,posCabeza);
 
-            Console.SetCursorPosition(cuerpo[cuerpo.Count-1].X, cuerpo[cuerpo.Count - 1].Y);
-            Console.WriteLine(" ");
-            cuerpo.RemoveAt(cuerpo.Count-1);
+            if (comer == false)
+            {
+                Console.SetCursorPosition(cuerpo[cuerpo.Count - 1].X, cuerpo[cuerpo.Count - 1].Y);
+                Console.WriteLine(" ");
+                cuerpo.RemoveAt(cuerpo.Count - 1);
+            }
+            else comer = false;
         }
         private void direccion()
         {
-            if (delay > 2000)
+            if (delay > 1000)
             {
                 borrar();
                 cabezaAnt = cabeza;
@@ -80,13 +95,33 @@ namespace Snake
                 else if(dir == 'u') cabeza.Y--;
                 else if(dir == 'd') cabeza.Y++;
                 delay = 0;
-                moverCuerpo(cabezaAnt);
+                if (dir != 'n')
+                    moverCuerpo(cabezaAnt);
             }
         }
         private void borrar()
         {
             Console.SetCursorPosition(cabeza.X, cabeza.Y);
             Console.WriteLine(" ");
+        }
+        private void colisionPared()
+        {
+            if (cabeza.X <= esquinaArriba.X) 
+                cabeza = new Point(esquinaAbajo.X - 1,cabeza.Y);
+            if (cabeza.X >= esquinaAbajo.X)
+                cabeza = new Point(esquinaArriba.X + 1, cabeza.Y);
+            if (cabeza.Y <= esquinaArriba.Y)
+                cabeza = new Point(cabeza.X, esquinaAbajo.Y - 1);
+            if (cabeza.Y >= esquinaAbajo.Y)
+                cabeza = new Point(cabeza.X, esquinaArriba.Y + 1);
+        }
+        private void colisionManzana()
+        {
+            if (cabeza == m.Posicion)
+            {
+                m.posicionar(this);
+                comer = true;
+            }
         }
     }
 }

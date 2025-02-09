@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,21 +9,36 @@ namespace Snake
 {
     internal class Manzana
     {
-        private int w = Console.WindowWidth;
-        private int h = Console.WindowHeight;
-        private int x;
-        private int y;
+        Tablero t;
+        private Point posicion;
+        public Point Posicion { get {return posicion; } }
         private Random r;
-        public Manzana() 
+        public Manzana(Tablero tablero) 
         {
             r = new Random();
-            x = r.Next(0,w);
-            y = r.Next(0, h);
+            t = tablero;
+
+        }
+        public bool posicionar(Snake serpiente)
+        {
+            int x = r.Next(t.EsqArriba.X + 1, t.EsqAbajo.X);
+            int y = r.Next(t.EsqArriba.Y + 1, t.EsqAbajo.Y);
+            posicion = new Point(x, y);
+
+            foreach (Point c in serpiente.Cuerpo)
+            {
+                if((x == c.X && y == c.Y) || (x == serpiente.Cabeza.X && y == serpiente.Cabeza.Y))
+                {
+                    if (posicionar(serpiente))
+                        return true;
+                }
+            }
+            return true;
         }
         public void dibujar()
-        {
+        {            
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.SetCursorPosition(x, y);
+            Console.SetCursorPosition(posicion.X, posicion.Y);
             Console.WriteLine("0");
         }
     }

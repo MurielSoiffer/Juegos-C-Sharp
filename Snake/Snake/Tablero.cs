@@ -11,6 +11,8 @@ namespace Snake
     {
         private Point esquinaArriba;
         private Point esquinaAbajo;
+        public Point EsqArriba { get { return esquinaArriba; } }
+        public Point EsqAbajo { get { return esquinaAbajo; } }
         public Tablero(Point esqArriba, Point esqAbajo) 
         { 
             esquinaArriba = esqArriba;
