@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Snake
 {
     internal class Snake
     {
+        private bool vivo;
         private Point cabeza;
         private Point cabezaAnt = new Point();
         private char dir;
@@ -19,10 +21,18 @@ namespace Snake
         private Manzana m;
         private bool comer;
 
+        public bool Vivo { get { return vivo; } }
+
         public List<Point> Cuerpo { get { return cuerpo; } }
         public Point Cabeza { get { return cabeza; } }
+
+        public int Puntaje { get; set; }
+        public int PuntajeMaximo { get; set; }
         public Snake(Tablero tablero, Manzana manzana)
         {
+            Puntaje = 0;
+            PuntajeMaximo = 0;
+            vivo = true;
             comer = false;
             cabezaAnt = cabeza;
             dir = 'n';
@@ -35,7 +45,7 @@ namespace Snake
 
         private void iniciarCuerpo()
         {
-            int partes = 3;
+            int partes = 5;
             int x = cabeza.X - 1;
             for (int i = 0; i < partes; i++) 
             {
@@ -66,7 +76,7 @@ namespace Snake
             direccion();
             colisionPared();
             colisionManzana();
-
+            colisionCuerpo();
 
         }
         private void moverCuerpo(Point posCabeza)
@@ -86,7 +96,7 @@ namespace Snake
         }
         private void direccion()
         {
-            if (delay > 1000)
+            if (delay > 500)
             {
                 borrar();
                 cabezaAnt = cabeza;
@@ -119,8 +129,40 @@ namespace Snake
         {
             if (cabeza == m.Posicion)
             {
-                m.posicionar(this);
+                if (!m.posicionar(this)){
+                    vivo = false;
+                }
+                
                 comer = true;
+                Puntaje++;
+                PuntajeMaximo = (Puntaje > PuntajeMaximo) ? Puntaje : PuntajeMaximo;
+            }
+        }
+        private bool colisionCuerpo()
+        {
+            foreach (Point c in cuerpo)
+            {
+                if (cabeza == c)
+                {
+                    muerte();
+                    vivo = false;
+                    return true;
+                }
+            }
+            return false;
+                
+        }
+        private void muerte()
+        {
+            foreach (Point c in cuerpo)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                if (cabeza == c)
+                    continue;
+                Console.SetCursorPosition(c.X, c.Y);
+                Console.Write("o");
+                Thread.Sleep(110);
+                dibujar();
             }
         }
     }

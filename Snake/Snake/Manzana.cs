@@ -21,6 +21,11 @@ namespace Snake
         }
         public bool posicionar(Snake serpiente)
         {
+            int largoSerpiente = serpiente.Cuerpo.Count + 1;
+
+            if(t.Area -largoSerpiente <= 0) 
+                return false;
+
             int x = r.Next(t.EsqArriba.X + 1, t.EsqAbajo.X);
             int y = r.Next(t.EsqArriba.Y + 1, t.EsqAbajo.Y);
             posicion = new Point(x, y);

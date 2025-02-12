@@ -15,16 +15,22 @@ namespace Snake
             Console.CursorVisible = false;
             Console.SetWindowSize(120, 30);
 
-            Tablero t = new Tablero(new Point(4,2), new Point(115, 27));
+            Tablero t = new Tablero(new Point(24,2), new Point(95, 27));
             Manzana m = new Manzana(t);
             Snake s = new Snake(t, m);
             m.posicionar(s);
             t.dibujar();
+            
             while (true)
             {
-                m.dibujar();
-                s.dibujar();
-                s.moverse();
+                if (s.Vivo)
+                {
+                    t.dibujarInfo(s);
+                    m.dibujar();
+                    s.moverse();
+                    s.dibujar();
+                }
+                
             }
         }
     }
