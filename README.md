@@ -2,7 +2,7 @@
 
 Este repositorio contiene una colección de juegos retro desarrollados en C# que se ejecutan directamente en la ventana de la consola. Cada juego utiliza gráficos creados con `Console.Write()` y simula una experiencia visual similar a los videojuegos clásicos.
 
-<img align="right" width=200px alt="Abeja volando" src="https://64.media.tumblr.com/daeb4d9394fa0cf35144bd4a8778eb07/tumblr_n90wfpNybu1tha1vgo2_r1_250.gif"/>
+<img align="right" width=200px alt="Abeja volando" src="https://raw.githubusercontent.com/MurielSoiffer/MurielSoiffer/master/assets/consola.gif"/>
 
 Cada carpeta en este repositorio contiene un juego distinto:
 
